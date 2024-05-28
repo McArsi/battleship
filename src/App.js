@@ -1,23 +1,14 @@
-import logo from './logo.svg';
+import Turn from "./Components/Turn/Turn"
+import GameBoard from "./Components/GameBoard/GameBoard"
+import Preview from "./Components/Preview/Preview"
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Turn />
+      <GameBoard />
+      <Preview />
     </div>
   );
 }
