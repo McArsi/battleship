@@ -1,6 +1,14 @@
+import s from './gameBoard.module.css';
+import UserBoard from './UserBoard';
+import OpponentBoard from './OppenentBoard';
+
+
 const GameBoard = () => {
     return (
-        <div></div>
+        <div className={s.container}>
+            <UserBoard />
+            <OpponentBoard />
+        </div>
     )
 }
 
