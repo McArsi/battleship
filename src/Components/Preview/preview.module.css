@@ -21,10 +21,7 @@
 .ship div {
     width: 50px; 
     height: 50px; 
-    border: 3px solid #000000;
+    outline: 1px solid #000000;
     background-color: #707070;
 }
 
-.ship div:not(:first-child){
-    border-left: 0;
-}

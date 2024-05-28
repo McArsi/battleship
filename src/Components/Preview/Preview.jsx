@@ -12,7 +12,7 @@ const Preview = () => {
             //отрисовываем корабли в соответствии с их количеством
           <div>
             {Array.from({ length: ship.count }, (i) => (
-              <Item key={ship.id} {...ship} />
+              <Item key={"s" + ship.id} {...ship} />
             ))}
             
           </div>

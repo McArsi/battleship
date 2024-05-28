@@ -1,11 +1,14 @@
 import s from "./gameBoard.module.css";
+import { useSelector } from "react-redux"
 
 const OpponentBoard = () => {
+  const state = useSelector((state) => state.boards.opponentBoard)
   return (
+    //рендер поля компьютера
     <div className={s.board}>
-      {Array.from({ length: 100 }, (i) => (
-        <div key={i} className={s.item}></div>
-      ))}
+       {state.map((item) => {
+            return <div style={{backgroundColor: item[1]}} key={item} id={item} className={s.item}></div>
+        })} 
     </div>
   );
 };
